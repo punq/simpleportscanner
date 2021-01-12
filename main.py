@@ -4,7 +4,6 @@ soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 socket.setdefaulttimeout(0.5)
 
 host = input("What is the IP address you'd like to scan?: ")
-# port = int(input("What is the port you'd like to scan?: "))
 
 def portscanner(port):
     if soc.connect_ex((host,port)):
