@@ -5,6 +5,7 @@ socket.setdefaulttimeout(0.5)
 
 host = input("What is the IP address you'd like to scan?: ")
 
+
 def portscanner(port):
     if soc.connect_ex((host,port)):
         print("Port " + str(port) + " is closed")
@@ -13,3 +14,4 @@ def portscanner(port):
 
 for port in range(1,1000):
     portscanner(port)
+
